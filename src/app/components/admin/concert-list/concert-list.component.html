@@ -1,0 +1,29 @@
+<div class="container">
+    <h2 >Concerts CRUD Panel</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Location</th>
+                <th>Genre</th>
+                <th>Date</th>
+                <th>Twitter Handle</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+    
+        <tbody>
+            <tr *ngFor="let concert of concerts">
+                <td>{{concert.name}}</td>
+                <td>{{concert.location}}</td>
+                <td>{{concert.genre}}</td>
+                <td>{{concert.date}}</td>
+                <td>{{concert.twitterHandle}}</td>
+                <td>
+                    <button  (click)="deleteConcert(concert)">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <app-add-concert (onAddConcert)="addConcert($event)"></app-add-concert>
+</div>

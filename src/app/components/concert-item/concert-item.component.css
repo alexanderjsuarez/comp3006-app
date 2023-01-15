@@ -1,0 +1,9 @@
+.concert {
+    margin: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    line-height: 30%;
+    border: 1px solid;
+    border-color: #fb6f92;
+    border-radius: 25px;
+  }

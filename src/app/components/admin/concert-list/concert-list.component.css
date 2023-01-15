@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1500px;
+}
+
+.add {
+   margin-left: 10px;
+   margin-right: 10px;
+   height: 50px;
+   font-size: large;
+}
+
+h2 {
+    text-align: center;
+}
+
+th {
+    background-color: lightgray;
+}
+
+td {
+    text-align: center;
+}
+
+table {
+    background-color: white;
+    margin: 10px;
+}

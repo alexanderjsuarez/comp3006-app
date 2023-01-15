@@ -1,0 +1,11 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: fit-content;
+}
+.form-control {
+    display: grid;
+    padding: 5px;
+}

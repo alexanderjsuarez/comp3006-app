@@ -1,0 +1,57 @@
+<div class="container">
+    <h3>Add a New Concert</h3>
+    <form class="add-form" (ngSubmit)="onSubmit()">
+        <div class="form-control">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            [(ngModel)]="name"
+            id="name"
+            placeholder="Add Name"
+          />
+        </div>
+        <div class="form-control">
+            <label for="location">Location</label>
+            <input
+              type="text"
+              name="location"
+              [(ngModel)]="location"
+              id="location"
+              placeholder="Add Location"
+            />
+          </div>
+          <div class="form-control">
+            <label for="genre">Genre</label>
+            <input
+              type="text"
+              name="genre"
+              [(ngModel)]="genre"
+              id="genre"
+              placeholder="Add Genre"
+            />
+          </div>
+          <div class="form-control">
+            <label for="date">Date</label>
+            <input
+              type="Date"
+              name="date"
+              [(ngModel)]="date"
+              id="date"
+              placeholder="Add Date"
+            />
+          </div>
+          <div class="form-control">
+            <label for="twitterHandle">Twitter Handle</label>
+            <input
+              type="text"
+              name="twitterHandle"
+              [(ngModel)]="twitterHandle"
+              id="twitterHandle"
+              placeholder="Add Twitter Handle"
+            />
+          </div>
+        <input type="submit" value="Save Concert" />
+      </form>
+</div>
+

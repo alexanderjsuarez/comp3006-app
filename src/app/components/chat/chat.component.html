@@ -1,0 +1,17 @@
+<p>Chat about your favourite artists below!</p>
+<div [style.display]="usernameDisplay" class="username">
+  <label>Choose a username:</label>
+  <input id="uinput" #uinput/>
+  <button (click)="onClick(uinput.value)">Enter</button>
+</div>
+<div [style.display]="messageBoxDisplay" class="messageBox">
+  <ul id="messages">
+    <li *ngFor="let connection of connectionList" class="connectionList">{{connection}}</li>
+    <li *ngFor="let message of messageList" class="message_received">{{message}}</li>
+    <li *ngFor="let sentMessage of sentMessageList" class="message_sent">{{sentMessage}}</li>
+  </ul>
+  <input [(ngModel)]="newMessage" (keyup)="$event.keyCode == 13 && sendMessage()" id="input" autocomplete="off"/>
+</div>
+
+
+

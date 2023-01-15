@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="header">
+        <app-header ></app-header>
+    </div>
+    <div class="parent">
+        <div class="concerts_chat">
+            <div class="app-concerts">
+                <div class="text">
+                    <h2>Upcoming Events</h2>
+                    <p>Click on an event to view related tweets!</p>
+                </div>
+                <div class="concert-items">
+                    <app-concert-item *ngFor="let concert of concerts  | paginate: {
+                        itemsPerPage: pageSize,
+                        currentPage: p }" [concert]="concert">
+                    </app-concert-item>
+                </div>
+                <div class="pag">
+                    <pagination-controls (pageChange)="p = $event"></pagination-controls>
+                </div>
+            </div>
+            <app-chat class="child"></app-chat>
+        </div>
+        <app-twitter-feed></app-twitter-feed>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
