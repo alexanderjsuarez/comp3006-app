@@ -3,7 +3,7 @@ language: node_js
 node_js:
 - 18
 before_install:
-  - npm i -g npm@8.19.3
+- npm i -g npm@8.19.3
 install:
 - npm ci
 deploy:
@@ -11,7 +11,7 @@ deploy:
   skip_cleanup: true
   strategy: git
   api_key:
-    secure: kp8v4TkRmi/oINCva6ui59ip8TbETw1bMkWvziYD0759aHD4A71zGX/sSsQuYTst0i4m2/gbs5jov4jKfS4/2IEddGhEHLEzwSbmx3fxLSt00/G1N6UiDR341gEPAzpZGdB739VAuNw7vD00MMh47q/F31qsosk97UeJLppuEN7xwccS1sH+6VkPq64UAr19dw3tw1GBrMHgRfaHYsH1LlLyd354AyTeoSfMI+y3qKbUCLB0DXcfICwPF5GYTzPizshs+YAcY9NnAwMeqKZ4wzO9xQ08E+xo7a1LlOdV4o3RAYzdNpS2vSZFXwMf/DoKW5IEX59CLYqb25zQKxLnxDfnd4uBWRHhHQXHwVaKfszEpHGi3cui+0QRnYU1stGIPtqbfaj0gTXa/h+gqMloB/uzs/oQzTxguOe9BxpQD5GuMtJOJmmBELIgPNxoE9ov4GdROoT20g6qt/1XSM4g5ievtBOMAm042Ueio/imneWSsrJkGbmvFQGwBP90IWy/qbyKfSK+svJnaHWH655ZzER8GqG4oqS1cgVXlmpSv8qtnQxJJsg39skvD0lSvcCU+hMtv9L3/UijuTDW3KrJoev1ZJd/XNH6uCR8fipuFu7JtTwiADtRrap22/y8ZMp4FpxxGsVFKzoEWJm3T4NIJPSujnhBDT7tOo5ZaGNZZ8M=
+    secure: GNfl0l8wrULbWyAdZhp/9nSZ/Rk4Ve7+vkfAKa7QU+D8Q8gYSZlhxZtZxz1anLpJ+x8lRIqAmJCa0hkwSd4kL+JfHlPr8FLpiJ05k8kaDaxFm78Xm4aQp09SEGW7JghQuyob34A9DpYfs+C/Wv6QG2gESdWGkgeMTRwz3DSNIe0jMLI3wi2VeADZBVfC1J1Luo0MzE89ODPmK9XGs9ehQmt6iyOvZltfVircRieOlwnXpWMsXMmKqYhzUZ0Bk+PBoQlPv+rmT/B6FTzZaFyuKSSf1WIbxJyYRFhupCfHUb+qCCz/t5GbX67XpZM6xJdZuI9VUtglyzzool+Tqe/qASvLf85xzEIcOzuFVMs1WQW461Ce7YE1BUhcX8XZ1YWfgk4lt9ALy++haphRpuO0+wYeSq7lPtErhKY2iKoq7ZMQltKDmDGr2KTLEwQhtfjrvc442RbVE1rX01cXFQJHE2mwUrRthC+zlFXHfkrxQiyy3JSvgfvVr1u1Efmwsmxoe3aR3usY64APQBLB0lax3dsj8N1bN4YydY+hY6EfiTvYhE+uPR17uUI8p0w4PcFEbBH0BE9ApdcMZCbdOE0KlbiCjrkDl3/Hf3EDz2d6X7eqB6itqGWVGiJH0CwvImmOuM76EWapi5kaKsOqMK+SCQZW1dqHbREcdIQrMYwvvFg=
   app:
     main: comp3006-app
 cache: npm
