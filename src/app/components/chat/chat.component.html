@@ -5,11 +5,11 @@
   <button (click)="onClick(uinput.value)">Enter</button>
 </div>
 <div [style.display]="messageBoxDisplay" class="messageBox">
-  <ul id="messages">
-    <li *ngFor="let connection of connectionList" class="connectionList">{{connection}}</li>
-    <li *ngFor="let message of messageList" class="message_received">{{message}}</li>
-    <li *ngFor="let sentMessage of sentMessageList" class="message_sent">{{sentMessage}}</li>
-  </ul>
+  <div id="messages">
+    <p *ngFor="let connection of connectionList" class="connectionList">{{connection}}</p>
+    <p *ngFor="let message of messageList" class="message_received">{{message}}</p>
+    <p *ngFor="let sentMessage of sentMessageList" class="message_sent">{{sentMessage}}</p>
+  </div>
   <input [(ngModel)]="newMessage" (keyup)="$event.keyCode == 13 && sendMessage()" id="input" autocomplete="off"/>
 </div>
 
